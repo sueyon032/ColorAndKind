@@ -12,8 +12,8 @@
     margin-top: 5px;
 }
 
-#menu1{
-
+.menuButton{
+    opacity: 5;
 }
 
 #menuTable{
