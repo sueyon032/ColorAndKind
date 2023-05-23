@@ -5,15 +5,14 @@
 }
 
 #logo{
-    width:160px;
-    height: 90px;
+    width: 150px;
+    height: 80px;
     display: block;
     margin:auto;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .menuButton{
-    opacity: 5;
 }
 
 #menuTable{
