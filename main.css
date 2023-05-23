@@ -12,10 +12,26 @@
     margin-top: 10px;
 }
 
-.menuButton{
-}
-
 #menuTable{
     width: 100%;
     margin-top: 50px;
+}
+
+#menubtn1{
+    background: url("Icons/menu1.png") no-repeat;
+    border: none;
+    width: 375px;
+    height: 500px;
+}
+#menubtn2{
+    background: url("Icons/menu2.png") no-repeat;
+    border: none;
+    width: 375px;
+    height: 500px;
+}
+#menubtn3{
+    background: url("Icons/menu3.png") no-repeat;
+    border: none;
+    width: 375px;
+    height: 500px;
 }
