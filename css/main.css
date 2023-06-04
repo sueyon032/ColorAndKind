@@ -1,85 +1,32 @@
 body{
-    margin: 0;
-    background-image: url("images/main_background1.png"), url("images/gray_bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0;
-    height: 2000px; /* 스크롤을 위한 높이 설정*/
+    -ms-overflow-style: none;   /*Internet Explorer 브라우저: 스크롤바 none*/
+    background-color: white;
 }
 
-.scroll-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("images/main_background.png"); /* 초기 배경 이미지 설정 */
-    background-repeat: no-repeat;
-    background-position: center top;
-    transition: background-image 0.5s ease; /* 배경 전환에 대한 트랜지션 효과 설정 */
+::-webkit-scrollbar {   /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
+    display: none;
+}
+
+.bgimg {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bgimg li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bgimg1,
+  .bgimg2 {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
   }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    padding: 8px 12px;
-    height: 50px;
-}
-.navbar_logo{
-    font-size: 26px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    padding: 20px;
-}
-.navbar_menu{
-    font-size: 20px;
-    display: contents;
-    list-style: none;
-    padding-left: 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-}
-.navbar_menu li{
-    padding: 8px 12px;
-}
-.navbar_toggleBtn{
-    display: none;
-    position: absolute;
-    padding: 20px;
-    right: 32px;
-    font-size: 24px;
-    color: white;
-}
-
-@media screen and (max-width: 1024px) {
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 24px;
-    }
-    .navbar_menu{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .navbar_menu li{
-        width: 100%;
-        text-align: center;
-    }
-    .navbar_toggleBtn{
-        display: block;
-    }
-    .navbar_menu.active,
-    .navbar_anothers.active{
-        display: flex;
-    }
+ .bgimg li {
+    position: relative;
 }
 
 #text1{
@@ -87,7 +34,7 @@ a{
     font-size: 3.2vw;
     color:white;    
     position: absolute; 
-    top: 90px; 
+    top: 50px; 
     left: 50px;
     font-weight: bolder;
 }
@@ -95,3 +42,29 @@ a{
 #text1 p {
     margin: 0; 
 }
+
+#text2 {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 1.1vw;
+}
+
+.bgimg3{
+    width: 473px;
+    height: 711px;
+}
+
+#text3 {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-40%, -50%);
+    z-index: 1;
+    font-size: 1.5vw;
+}
+
