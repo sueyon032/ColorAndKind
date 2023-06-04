@@ -1,6 +1,32 @@
 body{
-    /* background-size: cover; */
-    background-image: 'images/bg1.png';
+    -ms-overflow-style: none;   /*Internet Explorer 브라우저: 스크롤바 none*/
+    background-color: white;
+}
+
+::-webkit-scrollbar {   /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
+    display: none;
+}
+
+.bgimg {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bgimg li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bgimg1,
+  .bgimg2 {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+ .bgimg li {
+    position: relative;
 }
 
 #text1{
@@ -8,12 +34,37 @@ body{
     font-size: 3.2vw;
     color:white;    
     position: absolute; 
-    top: 90px; 
+    top: 50px; 
     left: 50px;
     font-weight: bolder;
 }
 
 #text1 p {
     margin: 0; 
+}
+
+#text2 {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 1.1vw;
+}
+
+.bgimg3{
+    width: 473px;
+    height: 711px;
+}
+
+#text3 {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-40%, -50%);
+    z-index: 1;
+    font-size: 1.5vw;
 }
 
