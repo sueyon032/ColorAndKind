@@ -1,9 +1,11 @@
-body{
-    -ms-overflow-style: none;   /*Internet Explorer 브라우저: 스크롤바 none*/
+body {
+    -ms-overflow-style: none;
+    /*Internet Explorer 브라우저: 스크롤바 none*/
     background-color: white;
 }
 
-::-webkit-scrollbar {   /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
+::-webkit-scrollbar {
+    /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
     display: none;
 }
 
@@ -11,36 +13,35 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .bgimg li {
+}
+
+.bgimg li {
     margin: 0;
     padding: 0;
-  }
-  
-  .bgimg1,
-  .bgimg2 {
+}
+
+.bgimg1,
+.bgimg2 {
     display: block !important;
     width: 100% !important;
-    height: 100% !important;
-  }
+}
 
- .bgimg li {
+.bgimg li {
     position: relative;
 }
 
-#text1{
+#text1 {
     font-family: 'Inter', sans-serif;
     font-size: 3.2vw;
-    color:white;    
-    position: absolute; 
-    top: 50px; 
+    color: white;
+    position: absolute;
+    top: 50px;
     left: 50px;
     font-weight: bolder;
 }
 
 #text1 p {
-    margin: 0; 
+    margin: 0;
 }
 
 #text2 {
@@ -50,20 +51,83 @@ body{
     left: 48%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    font-size: 1.1vw;
-}
-
-.bgimg3{
-    width: 473px;
-    height: 711px;
 }
 
 #text3 {
     font-family: 'Inter', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-40%, -50%);
-    z-index: 1;
-    font-size: 1.5vw;
+    text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .bgimg2 {
+        height: 300px;
+    }
+
+    #text2 {
+        font-size: 0.85rem;
+    }
+
+    .bgimg3 {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        position: relative; 
+    }
+    #text3 {
+        font-size: 1.2rem;
+        margin: 50px;
+    }
+    #text3 h2{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .bgimg2 {
+        height: 400px;
+    }
+    #text2 {
+        font-size: 1.1rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .bgimg3 {
+        width: 473px;
+        height: 711px;
+    }
+
+    #text3 {
+        position: absolute;
+        top: 50%;
+        left: 68%;
+        transform: translate(-30%, -50%);
+        z-index: 1;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .bgimg2 {
+        height: 300px;
+    }
+
+    #text2 {
+        font-size: 1rem;
+    }
+
+    .bgimg3 {
+        width: 473px;
+        height: 711px;
+    }
+
+    #text3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, -50%);
+        z-index: 1;
+        font-size: 1.5vw;
+    }
 }
