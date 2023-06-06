@@ -31,12 +31,12 @@ a{
 .navbar_toggleBtn{
     display: none;
     position: absolute;
-    right: 32px;
+    right: 20px;
     font-size: 26px;
     color: white;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .navbar{
         flex-direction: column;
         align-items: flex-start;
@@ -66,9 +66,9 @@ a{
     .navbar_menu.active{
         display: flex;
     }
-    @media screen and (max-width: 390px){
+    @media screen and (max-width: 768px){
         .navbar{
-            padding: 6px 20px;
+            padding: 5px 20px;
         }
         .navbar_logo,
         .navbar_toggleBtn{

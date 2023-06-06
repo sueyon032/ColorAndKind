@@ -1,0 +1,28 @@
+.box{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.differ,
+.green,
+.all{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.red,
+.blue{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    .box{
+        font-size: 20px;
+    }
+}
