@@ -23,6 +23,32 @@
 
 @media screen and (max-width: 1024px) {
     .box{
+        font-size: 30px;
+    }
+    .differ,
+    .green,
+    .all{
+        flex-direction: column;
+    }
+    .red,
+    .blue{
+        flex-direction: column-reverse;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .box{
         font-size: 20px;
+    }
+
+    .differ,
+    .green,
+    .all{
+        flex-direction: column;
+    }
+    .red,
+    .blue{
+        flex-direction: column-reverse;
     }
 }
