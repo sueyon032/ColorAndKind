@@ -1,0 +1,125 @@
+body {
+    -ms-overflow-style: none;
+    /*Internet Explorer 브라우저: 스크롤바 none*/
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
+    display: none;
+}
+
+.text {
+    text-align: center;
+}
+
+.text p {
+    margin: 0;
+    padding: 0;
+}
+
+.colorpicker {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.rectangle {
+  margin-top: 70px;
+  margin-bottom: 500px;
+  width: 80%;
+}
+
+.check-image,
+.text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  z-index: 1;
+  color:rgb(169, 169, 169);
+  font-weight: bold;
+}
+
+.text3 {
+  text-align: center;
+}
+
+
+@media screen and (min-width:430px) and (max-width:991px) {
+    .text p.text1 {
+        font-size: 25px;
+        margin-top: 100px;
+    }
+
+    .text p.text2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .rectangle{
+        height: 350px;
+    }
+
+    .check-image{
+        top:22%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+    }
+
+    .text3 {
+        top: 340px;
+        transform: translateX(-50%);
+        font-size: 23px;
+      }
+}
+
+@media screen and (min-width:992px) {
+    .text p.text1 {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+
+    .text p.text2 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .rectangle{
+        height: 600px;
+    }
+
+    .check-image{
+        top:25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text3{
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .text p.text1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .text p.text2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .rectangle{
+        height: 600px;
+    }
+
+    .check-image{
+        top:25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
