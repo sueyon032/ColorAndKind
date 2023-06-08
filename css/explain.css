@@ -1,4 +1,4 @@
-.box{
+/* .box{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 60px;
@@ -51,4 +51,41 @@
     .blue{
         flex-direction: column-reverse;
     }
+} */
+:root{
+    --gray-color: #eeeeee;
+    --white-color: #ffffff;
+    --font: 'Inter', sans-serif;
+}
+.col{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 50px;
+}
+#differ,
+#green,
+#all{
+    background-color: var(--gray-color);
+}
+#red,
+#blue{
+    background-color: var(--white-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .col{
+        flex-direction: column;
+        font-size: 30px;
+    }
+    img{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
 }
