@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/colorPicker.css" />
     <script src="js/navbar.js" defer></script>
+    <script src="js/colorPicker.js" defer></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,11 +43,14 @@
 
     <div class="colorpicker">
         <img class="rectangle" src="images/rectangle.png">
-        <button class="btn">
+        <button class="btn" id="uploadButton">
             <img class="check-image" src="images/image.png">
             <p class="text3">클릭하여 이미지 업로드</p>
-        </button>
+          </button>
+          <input type="file" id="uploadInput" accept="image/*" style="display: none;">
+          <div id="previewContainer"></div>
     </div>
+    
 
 </body>
 
