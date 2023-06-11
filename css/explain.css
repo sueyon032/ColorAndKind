@@ -1,67 +1,25 @@
-/* .box{
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 60px;
-}
-
-.differ,
-.green,
-.all{
-    margin: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.red,
-.blue{
-    margin: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-@media screen and (max-width: 1024px) {
-    .box{
-        font-size: 30px;
-    }
-    .differ,
-    .green,
-    .all{
-        flex-direction: column;
-    }
-    .red,
-    .blue{
-        flex-direction: column-reverse;
-    }
-    
-}
-
-@media screen and (max-width: 768px) {
-    .box{
-        font-size: 20px;
-    }
-
-    .differ,
-    .green,
-    .all{
-        flex-direction: column;
-    }
-    .red,
-    .blue{
-        flex-direction: column-reverse;
-    }
-} */
 :root{
     --gray-color: #eeeeee;
     --white-color: #ffffff;
     --font: 'Inter', sans-serif;
 }
+
+body{
+    -ms-overflow-style: none;
+    /*Internet Explorer 브라우저: 스크롤바 none*/
+}
+
+::-webkit-scrollbar {
+    /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
+    display: none;
+}
+
 .col,
 .col2{
     padding: 40px;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     font-family: var(--font);
     font-weight: 500;
@@ -76,22 +34,37 @@
 #blue{
     background-color: var(--white-color);
 }
+img{
+    margin: 5px;
+}
 
 @media screen and (max-width: 1024px) {
+    .col2{
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+        
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
     .col,
     .col2{
         flex-direction: column;
         font-size: 30px;
     }
-    img{
-        margin-bottom: 10px;
-    }
-    .col2{
-        width: 50vw;
-        padding: 0px;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    
+    .col,
+    .col2{
+        font-size: 25px;
+    }
+    .container{
+        display: block;
+    }
 }
