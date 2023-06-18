@@ -2,6 +2,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const uploadButton = document.getElementById('uploadButton');
   const fileInput = document.getElementById('uploadInput');
   const previewContainer = document.getElementById('previewContainer');
+  const checkImage = document.querySelector('.check-image');  // 이미지 삽입 되었을 때 check-image와 text3 숨기기
+  const text3 = document.querySelector('.text3');
 
   uploadButton.addEventListener('click', () => {
     fileInput.click();
@@ -17,6 +19,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
       previewContainer.innerHTML = '';
       previewContainer.appendChild(image);
+
+      // 이미지가 추가될 때 check-image와 text3를 숨김
+      checkImage.style.display = 'none';
+      text3.style.display = 'none';
     };
 
     reader.readAsDataURL(file);
