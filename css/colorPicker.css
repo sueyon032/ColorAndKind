@@ -24,20 +24,36 @@ body {
     position: relative;
 }
 
-.check-image,
-.text3 {
+.rectangle {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-image {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    width: 30%;
+}
+
+.text3{
+    position: absolute;
+    transform: translate(-50%, -50%);
     z-index: 1;
     color: rgb(169, 169, 169);
     font-weight: bold;
-}
-
-.text3 {
-    text-align: center;
-    font-size: 30px;
+    font-size: 2.5vw;
+    top: 70%;
+    left: 50%;
 }
 
 .btn {
@@ -56,35 +72,20 @@ body {
     font-weight: bold;
 }
 
-.check-image {
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.rectangle {
-    margin-top: 70px;
-    margin-bottom: 500px;
-    height: 5%;
-    width: 70%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #previewContainer {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: auto;
-    margin-top: -15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #previewContainer img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 @media screen and (max-width:1024px) {
@@ -99,26 +100,23 @@ body {
     }
 
     .rectangle {
-        /* height: 350px; */
-        width: 80%;
         height: 20%;
+        margin-bottom: 5%;
     }
 
     .check-image {
-        top: 22%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 280px;
     }
 
     .text3 {
-        top: 340px;
-        transform: translateX(-50%);
         font-size: 23px;
+        top: 75%;
     }
 
     #previewContainer {
-        margin-top: -25%;
+        transform: translate(-50%, -45%);
     }
 }
 
@@ -134,7 +132,7 @@ body {
     }
 
     .rectangle {
-        /* height: 20%; */
+        height: 20%;
         margin-bottom: 5%;
     }
 
@@ -145,11 +143,11 @@ body {
     }
 
     .text3 {
-        font-size: 30px;
-        top: 70%;
+        font-size: 22px;
+        top: 75%;
     }
 
     #previewContainer {
-        margin-top: 5%;
+        transform: translate(-50%, -40%);
     }
 }
