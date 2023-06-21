@@ -83,7 +83,7 @@ body {
 }
 
 #previewContainer img {
-    width: 100%;
+    width: 75%;
     height: 100%;
     object-fit: contain;
 }
@@ -131,11 +131,6 @@ body {
         font-weight: bold;
     }
 
-    .rectangle {
-        height: 20%;
-        margin-bottom: 5%;
-    }
-
     .check-image {
         top: 50%;
         left: 50%;
@@ -143,7 +138,7 @@ body {
     }
 
     .text3 {
-        font-size: 22px;
+        font-size: 20px;
         top: 75%;
     }
 
