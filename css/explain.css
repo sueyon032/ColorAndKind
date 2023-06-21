@@ -13,7 +13,9 @@ body{
     /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
     display: none;
 }
-
+.col{
+    margin-top: 44px;
+}
 .col,
 .col2{
     padding: 40px;

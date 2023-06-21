@@ -24,6 +24,9 @@ Button{
     font-family: var(--font);
     font-weight: 400;
 }
+img {
+    margin-top: 44px;
+}
 .img{
     text-align: center;
     padding: 20px;

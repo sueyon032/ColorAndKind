@@ -1,4 +1,16 @@
 .img{
     text-align: center;
-    margin: 50px;
+    margin: 40px;
+}
+Button {
+    border: 0;
+    width: 130px;
+    height: 130px;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: 0 30px;
+    padding: 0;
+}
+.btnGroup {
+    text-align: center;
 }
