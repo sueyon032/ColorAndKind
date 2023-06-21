@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css,js 불러옴 -->
     <link rel="stylesheet" href="css/navbar.css"/>
-    <link rel="stylesheet" href="css/test_all.css"/>
+    <link rel="stylesheet" href="css/testPage.css"/>
     <script src="js/navbar.js" defer></script>
-    <script src="js/test_all.js" defer></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +15,32 @@
     <title>쿠앤크</title>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/0d77807ef9.js" crossorigin="anonymous"></script>   <!-- font awesome CDN link -->
+
+    <script language="javascript">
+        let b1=0, b2=0, b3=0;
+        function btn1(){
+            if(b1!==1 && b2!==1 && b3!==1){
+                b1++;
+                alert("btn1 클릭됨");
+            }
+        }
+        function btn2() {
+            if(b1!==1 && b2!==1 && b3!==1){
+                b2++;
+                alert("btn2 클릭됨");
+            }
+        }
+        function btn3() {
+            if(b1!==1 && b2!==1 && b3!==1){
+                b3++;
+                alert("btn3 클릭됨");
+            }
+        }
+        function next() {
+            window.close();
+            window.open("main.html", "main", "");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -38,11 +63,11 @@
         <img src="images/testImg_all.png">
     </div>
     <div class="btnGroup">
-        <Button type="button">8</Button>
-        <Button type="button">3</Button>
-        <Button type="button">5</Button>
+        <Button type="button" onclick="btn1()">8</Button>
+        <Button type="button" onclick="btn2()">3</Button>
+        <Button type="button" onclick="btn3()">5</Button>
     </div>
-    
+    <Button type="button" onclick="next()" class="nextBtn">next ></Button>
 
 </body>
 </html>
