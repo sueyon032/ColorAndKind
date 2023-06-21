@@ -1,6 +1,12 @@
 body {
     margin: 0;
     background-color: white;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
+    display: none;
 }
 
 .text {
@@ -19,25 +25,35 @@ body {
 }
 
 .rectangle {
+    position: relative;
     margin-top: 70px;
-    margin-bottom: 500px;
-    width: 80%;
+    margin-bottom: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.check-image,
-.text3 {
+.check-image {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    width: 30%;
+}
+
+.text3{
+    position: absolute;
+    transform: translate(-50%, -50%);
     z-index: 1;
     color: rgb(169, 169, 169);
     font-weight: bold;
-}
-
-.text3 {
-    text-align: center;
-    font-size: 30px;
+    font-size: 2.5vw;
+    top: 70%;
+    left: 50%;
 }
 
 .btn {
@@ -55,24 +71,26 @@ body {
     font-weight: bold;
 }
 
-.rectangle {
-    height: 600px;
-}
-
-.check-image {
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 #previewContainer {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#previewContainer img {
+    width: 75%;
+    height: 100%;
+    object-fit: contain;
 }
 
 @media screen and (max-width:1024px) {
     .text p.text1 {
         font-size: 25px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .text p.text2 {
@@ -81,37 +99,8 @@ body {
     }
 
     .rectangle {
-        height: 350px;
-    }
-
-    .check-image {
-        top: 22%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 280px;
-    }
-
-    .text3 {
-        top: 340px;
-        transform: translateX(-50%);
-        font-size: 23px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .text p.text1 {
-        font-size: 25px;
-        margin-top: 80px;
-    }
-
-    .text p.text2 {
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .rectangle {
-        height: 400PX;
-        margin-bottom: 0;
+        height: 20%;
+        margin-bottom: 5%;
     }
 
     .check-image {
@@ -121,7 +110,38 @@ body {
     }
 
     .text3 {
+        font-size: 23px;
+        top: 75%;
+    }
+
+    #previewContainer {
+        transform: translate(-50%, -45%);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .text p.text1 {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .text p.text2 {
         font-size: 30px;
-        top: 70%;
+        font-weight: bold;
+    }
+
+    .check-image {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text3 {
+        font-size: 20px;
+        top: 75%;
+    }
+
+    #previewContainer {
+        transform: translate(-50%, -40%);
     }
 }
