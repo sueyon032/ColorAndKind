@@ -1,4 +1,4 @@
-body{
+/* body{
     margin: 0;
 }
 a{
@@ -11,7 +11,7 @@ a{
     align-items: center;
     background-color: #000000;
     padding: 4px 24px; /* 위아래, 양옆 */
-}
+/*}
 .navbar_logo{
     font-size: 26px;
     font-family: 'Inter', sans-serif;
@@ -75,5 +75,91 @@ a{
             padding: 0px;
             font-size: 23px;
         }
+    }
+} */
+
+:root {
+    --main-color: #000;
+    --font: 'Inter', sans-serif;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+    --font-black: 900;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+nav {
+    height: 44px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 16px;
+}
+.navbar_logo {
+    color: #fff;
+    font-weight: var(--font-black);
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar_menu {
+    display: flex; 
+    column-gap: 80px;   /* 링크 사이 공간 */
+    font-weight: var(--font-medium);  
+     
+}
+.navbar_menu li {
+    list-style: none;
+    font-weight: var(--font-bold);
+}
+.nav_toggleBtn {
+    font-size: 20px;
+    visibility: hidden;
+}
+
+@media screen and (max-width:1024px) {
+    .navbar_menu {
+        position: absolute;
+        top: 24px;
+        right: 0;
+        left: 0;
+        height: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--main-color);
+        overflow: hidden;
+    }
+    .nav-link {
+        display: block;
+    }
+    .nav-item {
+        padding: 1em 0;
+    }
+    .nav_toggleBtn {
+        visibility: visible;
+        position: absolute;
+        right: 16px;
+    }
+    .show-menu {
+        height: 162px;
     }
 }
