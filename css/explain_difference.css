@@ -9,6 +9,16 @@
     align-items: center;
 }
 
+.title{
+    font-size: 2.3vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ex_txt{
+    font-size: 20px;
+}
+
 .blindness_png {
     margin: 20px;
     width: 13%;
@@ -17,7 +27,7 @@
 
 .ex_color_blindness,
 .ex_color_weakness{
-    margin: 30px;
+    margin: 20px;
     font-size: 22px;
 }
 
@@ -27,8 +37,13 @@
         width: 20%;
         height: 20%;
     }
+    .ex_txt{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    .ex_txt{
+        font-size: 10px;
+    }
 }
