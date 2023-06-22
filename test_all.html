@@ -7,6 +7,7 @@
     <!-- css,js 불러옴 -->
     <link rel="stylesheet" href="css/navbar.css"/>
     <link rel="stylesheet" href="css/testPage.css"/>
+    <link rel="stylesheet" href="slide.css"/>
     <script src="js/navbar.js" defer></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,33 +18,41 @@
     <script src="https://kit.fontawesome.com/0d77807ef9.js" crossorigin="anonymous"></script>   <!-- font awesome CDN link -->
 
     <script language="javascript">
-        let b1=0, b2=0, b3=0;
+        window.open("popup.html", "popup", "width=500, height=200, left=500, top=250");
+        const btnarr = [0,0,0,0,0,0];
         function btn1(){
-            if(b1!==1 && b2!==1 && b3!==1){
-                b1++;
-                alert("btn1 클릭됨");
-            }
+            if(btnarr[0]!==1 && btnarr[1]!==1 && btnarr[2]!==1) btnarr[0]++;
         }
         function btn2() {
-            if(b1!==1 && b2!==1 && b3!==1){
-                b2++;
-                alert("btn2 클릭됨");
-            }
+            if(btnarr[0]!==1 && btnarr[1]!==1 && btnarr[2]!==1) btnarr[1]++;
         }
         function btn3() {
-            if(b1!==1 && b2!==1 && b3!==1){
-                b3++;
-                alert("btn3 클릭됨");
-            }
+            if(btnarr[0]!==1 && btnarr[1]!==1 && btnarr[2]!==1) btnarr[2]++;
         }
-        function next() {
-            window.close();
-            window.open("main.html", "main", "");
+        function btn4(){
+            if(btnarr[3]!==1 && btnarr[4]!==1 && btnarr[5]!==1) btnarr[3]++;
+        }
+        function btn5() {
+            if(btnarr[3]!==1 && btnarr[4]!==1 && btnarr[5]!==1) btnarr[4]++;
+        }
+        function btn6() {
+            if(btnarr[3]!==1 && btnarr[4]!==1 && btnarr[5]!==1) btnarr[5]++;
+        }
+        function result() {
+            // alert(btnarr);
+            // this.close();
+            //window.open("test.html", "test", "");
+            if(btnarr[1]===1 && btnarr[5]===1){
+                document.write("<div style=font-size:100px text-align: center;>당신은 전색맹이 아닙니다</div>".bold());
+            }
+            else {
+                document.write("<div style=font-size:100px>당신은 전색맹입니다</div>".bold());
+            }
         }
     </script>
 </head>
 <body>
-    <header>
+    <header style="z-index: 7;">
         <nav class="navbar">
             <a href="main.html" class="navbar_logo">c&k</a>
 
@@ -59,15 +68,35 @@
         </nav>
     </header>  
 
-    <div class="img">
-        <img src="images/testImg_all.png">
-    </div>
-    <div class="btnGroup">
-        <Button type="button" onclick="btn1()">8</Button>
-        <Button type="button" onclick="btn2()">3</Button>
-        <Button type="button" onclick="btn3()">5</Button>
-    </div>
-    <Button type="button" onclick="next()" class="nextBtn">next ></Button>
+    <div class="slide slide_wrap">
+        <div class="slide_item">
+            <div class="img">
+                <img src="images/testImg_all.png">
+            </div>
+            <div class="btnGroup">
+                <Button type="button" onclick="btn1()">5</Button>
+                <Button type="button" onclick="btn2()">12</Button>
+                <Button type="button" onclick="btn3()">?</Button>
+            </div>
+        </div>
+        <div class="slide_item">
+            <div class="img">
+                <img src="images/testImg_all2.png">
+            </div>
+            <div class="btnGroup">
+                <Button type="button" onclick="btn4()">5</Button>
+                <Button type="button" onclick="btn5()">?</Button>
+                <Button type="button" onclick="btn6()">15</Button>
+            </div>
+            <div class="btndiv">
+                <Button type="button" onclick="result()" class="nextBtn">결과보기</Button>
+            </div>
+        </div>
+        <div class="slide_prev_button slide_button"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="slide_next_button slide_button"><i class="fa-solid fa-chevron-right"></i></div>
+        <ul class="slide_pagination"></ul>
+      </div>
+      <script src="./slide.js"></script>
 
 </body>
 </html>

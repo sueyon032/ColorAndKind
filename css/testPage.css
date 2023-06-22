@@ -2,9 +2,6 @@
     text-align: center;
     margin: 40px;
 }
-img {
-    margin-top: 44px;
-}
 Button {
     border: 0;
     width: 130px;
@@ -22,4 +19,7 @@ Button {
     height: 50px;
     border-radius: 0;
     font-size: 20px;
+}
+.btndiv {
+    text-align: right;
 }
