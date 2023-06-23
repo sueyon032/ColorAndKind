@@ -121,6 +121,9 @@ a {
     text-decoration: none;
     color: #fff;
 }
+.nav-link {
+    margin: 0 30px;
+}
 .navbar_menu {
     display: flex; 
     column-gap: 80px;   /* 링크 사이 공간 */
