@@ -80,6 +80,9 @@ text{
         font-size: 25px;
         width: 100%;
     }
+    #differ {
+        padding: 40px 0;
+    }
     .container{
         display: block;
     }
