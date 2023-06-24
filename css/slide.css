@@ -8,7 +8,7 @@ body {
   display: none;
 }
 .slide {
-    top: 44px;
+    top: 50px;
     /* layout */
     display: flex;
     flex-wrap: nowrap;
@@ -80,4 +80,9 @@ body {
   }
   .testResImg {
     margin-top: 300px;
+  }
+  @media screen and (max-width:1024px) {
+    .slide {
+      top: 44px;
+    }
   }

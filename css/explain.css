@@ -19,7 +19,7 @@ a{
 }
 
 .col{
-    margin-top: 44px;
+    margin-top: 50px;
 }
 .col,
 .col2{
@@ -49,6 +49,9 @@ text{
 }
 
 @media screen and (max-width: 1024px) {
+    .col{
+        margin-top: 44px;
+    }
     .col2{
         padding: 0;
         padding-top: 40px;

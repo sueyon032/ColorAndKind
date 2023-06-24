@@ -22,7 +22,7 @@ Button{
     font-weight: 400;
 }
 img {
-    margin-top: 44px;
+    margin-top: 50px;
 }
 .img{
     text-align: center;
@@ -61,6 +61,9 @@ hr{
 }
 
 @media screen and (max-width: 1024px) {
+    img {
+        margin-top: 44px;
+    }
     Button{
         width: 40vw;
     }
