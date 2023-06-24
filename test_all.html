@@ -7,8 +7,10 @@
     <!-- css,js 불러옴 -->
     <link rel="stylesheet" href="css/navbar.css"/>
     <link rel="stylesheet" href="css/testPage.css"/>
-    <link rel="stylesheet" href="slide.css"/>
+    <link rel="stylesheet" href="css/slide.css"/>
     <script src="js/navbar.js" defer></script>
+    <script src="js/result.js" defer></script>
+    
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,18 +38,18 @@
             if(btnarr[3]!==1 && btnarr[4]!==1 && btnarr[5]!==1) btnarr[4]++;
         }
         function btn6() {
-            if(btnarr[3]!==1 && btnarr[4]!==1 && btnarr[5]!==1) btnarr[5]++;
+            if(btnarr[3]!==1 && btnarr[4]!==1 && btnarr[5]!==1) btnarr[5]++;    
         }
-        function result() {
-            // alert(btnarr);
-            // this.close();
-            //window.open("test.html", "test", "");
-            if(btnarr[1]===1 && btnarr[5]===1){
-                document.write("<div style=font-size:100px text-align: center;>당신은 전색맹이 아닙니다</div>".bold());
+        function testRes() {
+            if(btnarr[1]==1 && btnarr[5]==1){
+                result("yes");
             }
-            else {
-                document.write("<div style=font-size:100px>당신은 전색맹입니다</div>".bold());
+            else if(btnarr[0]==0 && btnarr[1]==0 && btnarr[2]==0 && btnarr[3]==0 && btnarr[4]==0 && btnarr[5]==0){
+                result("re");
             }
+            else{
+                result("noAll");
+            }            
         }
     </script>
 </head>
@@ -88,15 +90,22 @@
                 <Button type="button" onclick="btn5()">?</Button>
                 <Button type="button" onclick="btn6()">15</Button>
             </div>
-            <div class="btndiv">
-                <Button type="button" onclick="result()" class="nextBtn">결과보기</Button>
+            
+        </div>
+        <div class="slide_item">
+            <div class=" img testResImg">
+                <img src="" alt="" id="resImg" style="width: 70%;"> 
+            </div>
+            <div class="btnGroup resBtn">
+                <a href="main.html"><input type="button" value="메인화면"></Button></a>
+                <a href="explain.html"><input type="button" value="설명 보러가기"></Button></a>              
+                <input type="button" style="background-color: black; color: white;" onclick=testRes() value="결과보기"></Button>
             </div>
         </div>
         <div class="slide_prev_button slide_button"><i class="fa-solid fa-chevron-left"></i></div>
         <div class="slide_next_button slide_button"><i class="fa-solid fa-chevron-right"></i></div>
         <ul class="slide_pagination"></ul>
       </div>
-      <script src="./slide.js"></script>
-
+      <script src="js/slide.js"></script> <!--위치 고정-->
 </body>
 </html>
