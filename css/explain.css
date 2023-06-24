@@ -19,7 +19,7 @@ a{
 }
 
 .col{
-    margin-top: 44px;
+    margin-top: 50px;
 }
 .col,
 .col2{
@@ -49,12 +49,14 @@ text{
 }
 
 @media screen and (max-width: 1024px) {
+    .col{
+        margin-top: 44px;
+    }
     .col2{
         padding: 0;
         padding-top: 40px;
         padding-bottom: 40px;
-        width: 100%;
-        
+        width: 50vw;
     }
     .container{
         display: grid;
@@ -76,6 +78,10 @@ text{
     .col,
     .col2{
         font-size: 25px;
+        width: 100%;
+    }
+    #differ {
+        padding: 40px 0;
     }
     .container{
         display: block;

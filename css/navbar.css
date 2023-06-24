@@ -1,83 +1,3 @@
-/* body{
-    margin: 0;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    padding: 4px 24px; /* 위아래, 양옆 */
-/*}
-.navbar_logo{
-    font-size: 26px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-}
-.navbar_menu{
-    font-size: 17px;
-    display: contents;
-    list-style: none;
-    padding-left: 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-}
-.navbar_menu li{
-    padding: 10px 24px;
-}
-.navbar_toggleBtn{
-    display: none;
-    position: absolute;
-    right: 20px;
-    font-size: 26px;
-    color: white;
-}
-
-@media screen and (max-width: 1024px) {
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 4px 24px;
-    }
-    .navbar_logo{
-        padding: 3px;
-    }
-    .navbar_menu{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .navbar_menu li{
-        width: 100%;
-        text-align: center;
-    }
-    .navbar_menu li:hover {
-        background-color: gray;
-    }
-    .navbar_toggleBtn{
-        display: block;
-        padding: 3px;
-        font-size: 23px;
-    }
-    .navbar_menu.active{
-        display: flex;
-    }
-    @media screen and (max-width: 768px){
-        .navbar{
-            padding: 5px 20px;
-        }
-        .navbar_logo,
-        .navbar_toggleBtn{
-            padding: 0px;
-            font-size: 23px;
-        }
-    }
-} */
-
 :root {
     --main-color: #000;
     --font: 'Inter', sans-serif;
@@ -103,7 +23,7 @@ header {
     left: 0;
 }
 nav {
-    height: 44px;
+    height: 50px;
 }
 .navbar {
     display: flex;
@@ -115,7 +35,7 @@ nav {
 .navbar_logo {
     color: #fff;
     font-weight: var(--font-black);
-    font-size: 25px;
+    font-size: 30px;
 }
 a {
     text-decoration: none;
@@ -123,6 +43,7 @@ a {
 }
 .nav-link {
     margin: 0 30px;
+    font-size: 20px;
 }
 .navbar_menu {
     display: flex; 
@@ -151,8 +72,15 @@ a {
         background-color: var(--main-color);
         overflow: hidden;
     }
+    nav {
+        height: 44px;
+    }
+    .navbar_logo {
+        font-size: 25px;
+    }
     .nav-link {
         display: block;
+        font-size: 16px;
     }
     .nav-item {
         padding: 1em 0;
