@@ -1,3 +1,13 @@
+body{
+    -ms-overflow-style: none;
+    /*Internet Explorer 브라우저: 스크롤바 none*/
+}
+
+::-webkit-scrollbar {
+    /*Chrome, Safari, Opera 등 일부 브라우저: 스크롤바 none*/
+    display: none;
+}
+
 .img{
     margin-top: 40px;
     width: 100%;
