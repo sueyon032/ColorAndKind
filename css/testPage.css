@@ -8,7 +8,7 @@ Button {
     height: 130px;
     font-size: 30px;
     border-radius: 50%;
-    margin: 0 30px;
+    margin: 0 30px 50px 30px;
     padding: 0;
 }
 .btnGroup {
@@ -22,4 +22,11 @@ Button {
 }
 .btndiv {
     text-align: right;
+}
+input {
+    margin-top: 100px;
+    border: 0;
+    width: 15%;
+    background-color: white;
+    font-size: 20px;
 }
