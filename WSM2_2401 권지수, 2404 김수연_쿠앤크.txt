@@ -1,0 +1,3 @@
+https://github.com/wlsooo/wsm_project_colorAndKind.git
+
+https://colorandkind.netlify.app/
